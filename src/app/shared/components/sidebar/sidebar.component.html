@@ -1,0 +1,50 @@
+<aside class="sidebar" [ngClass]="{'collapsed': collapsed}">
+  <div class="sidebar-header">
+    <div class="logo-container">
+      <div class="logo">
+        <img ngSrc="assets/icons/moneybag.svg" alt="" height="32" width="32">
+      </div>
+      <span class="logo-text">Finance Tracker</span>
+    </div>
+    <button class="collapse-button" (click)="collapse()" [ngClass]="{'rotate': collapsed}">
+      <img alt="" ngSrc="assets/icons/collapse.svg" height="16" width="16">
+    </button>
+  </div>
+  <div class="sidebar-content">
+    <nav class="sidebar-nav">
+      <div class="nav-section">
+        <div class="nav-section-header">
+          main
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item active">
+            <a class="nav-link" href="/dashboard">
+              <span class="nav-icon">
+                <img ngSrc="assets/icons/home.svg" width="20" height="20" alt="">
+              </span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/payments">
+              <span class="nav-icon">
+                <img ngSrc="assets/icons/table-doc.svg" width="20" height="20" alt="">
+              </span>
+              <span class="nav-text">Payments</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="sidebar-footer">
+    <div class="theme-toggle">
+      <button class="theme-button">
+        <span class="nav-icon">
+          <img ngSrc="assets/icons/half-moon.svg" width="20" height="20" alt="">
+        </span>
+        <span>DarkMode</span>
+      </button>
+    </div>
+  </div>
+</aside>
